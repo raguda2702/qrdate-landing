@@ -1,5 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  <h1 className="text-3xl font-bold">QRDate</h1>
+</motion.div>
+
 
 export default function LandingPage() {
   return (
@@ -13,7 +23,7 @@ export default function LandingPage() {
         <h2 className="text-xl font-semibold">Как это работает?</h2>
         <ul className="text-left list-disc list-inside text-sm text-gray-700">
           <li>Создаёшь QR-код с профилем</li>
-          <li>Печатаешь на футболке</li>
+          <li>Заказываешь крутую футболку</li>
           <li>Люди сканируют и знакомятся</li>
         </ul>
       </div>
